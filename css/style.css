@@ -1,0 +1,29 @@
+@charset "UTF-8";
+html, body {
+  background: skyblue;
+  font-size: 20px;
+  font-family: "微软雅黑";
+}
+
+div ul {
+  font-size: 25px;
+}
+div ul li {
+  width: 300;
+  height: 400;
+  border: 1px solid #000;
+}
+div ul li a {
+  color: pink;
+}
+div ul li a:hover {
+  color: red;
+}
+
+.public, div {
+  width: 500px;
+  height: 200px;
+  border: 1px solid blue;
+}
+
+/*# sourceMappingURL=style.css.map */

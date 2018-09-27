@@ -1,0 +1,36 @@
+@charset "utf-8";
+//*{margin:0;padding:0;}
+html,body{
+    background:skyblue;
+    font-size:20px;
+    font-family: "微软雅黑";
+}
+
+
+@mixin fn($w:200,$h:300){
+    width:$w;
+    height:$h;
+    border:1px solid #000;
+}
+$color:red;
+div{
+    @extend .public;
+    ul{
+        font-size:25px;
+        li{
+            @include fn(300,400);
+            a{
+                color:pink;
+                &:hover{
+                    color:$color;
+                }
+            }
+        }
+    }
+}
+.public{
+    width:500px;
+    height:200px;
+    border:1px solid blue;
+}
+
